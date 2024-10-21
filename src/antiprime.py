@@ -24,9 +24,9 @@ def main() :
 		l=l-1
 		
 	if s>=r:
-		return("not anti-prime")
-	else:	
 		return("anti-prime")
+	else:	
+		return("not anti-prime")
 
 
 	## THE LAST LINES OF YOUR CODE SHOULD EITHER
