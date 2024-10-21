@@ -2,7 +2,7 @@
 ## IN THE SAME ORDER AS THE ARGUMENTS ARE TAKEN FROM THE
 ## COMMAND LINE SPECIFIED BELOW
 def main() :
-	x=int(intput("Enter a positive integer number: "))
+	x=int(input("Enter a positive integer number: "))
 	y=1
 	r=0
 	## YOU CODE SHOULD START HERE AST THE SAME
@@ -21,10 +21,12 @@ def main() :
 			if l % a == 0:
 				s=s+1
 			a=a+1
-		if s>=r:
-			return("not anti-prime")
 		l=l-1
-	return("anti-prime")
+		
+	if s>=r:
+		return("not anti-prime")
+	else:	
+		return("anti-prime")
 
 
 	## THE LAST LINES OF YOUR CODE SHOULD EITHER
@@ -41,4 +43,4 @@ if __name__ == "__main__" :
 	## $ python antiprime.py 6
 	## WHERE THE FIRST ARGUMENT IS A POSITIVE INTEGER NUMBER FOR WHICH
 	## YOU WANT TO FIGURE OUT WHETHER IS ANTI-PRIME OR NOT
-	print(main())
+	print(main(int(sys.argv[1])))
