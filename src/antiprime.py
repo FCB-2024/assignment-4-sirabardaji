@@ -8,7 +8,7 @@ def main() :
 	## YOU CODE SHOULD START HERE AST THE SAME
 	## IDENTATION AS THIS COMMENT
 	while y <= x:
-		if x % y == 0
+		if x % y == 0:
 			r=r+1
 		y=y+1
 
